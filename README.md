@@ -189,19 +189,18 @@ Not a toy model:
 <img src="public/landing.png" alt="DiabetesRisk.ai landing page with hero section and key metrics" width="800"/>
 
 ### 🔮 Single Prediction with SHAP Explanation
-<img src="public/predict.png" alt="Prediction result showing 18.3% moderate risk with SHAP feature importance bars for age, systolic BP, and arm circumference" width="800"/>
+<img src="public/risk_prediction.png" alt="Prediction result showing 18.3% moderate risk with SHAP feature importance bars for age, systolic BP, and arm circumference" width="800"/>
 
 ### 📊 Batch Prediction
-<img src="public/batch.png" alt="Batch CSV upload with preview table showing risk scores for 6 patients" width="800"/>
+<img src="public/batch_csv.png" alt="Batch CSV upload with preview table showing risk scores for 6 patients" width="800"/>
 
 ### 🗺️ India State-Level Risk Map
-<img src="public/map.png" alt="Interactive India map with diabetes prevalence by state, Kerala and Goa in dark red" width="800"/>
+<img src="public/state.png" alt="Interactive India map with diabetes prevalence by state, Kerala and Goa in dark red" width="800"/>
 
 ### 📖 About the Model
 <img src="public/about.png" alt="Model documentation showing data source, algorithm, and top predictors" width="800"/>
 
 </div>
-
 ---
 
 ## 🏗️ System Architecture
