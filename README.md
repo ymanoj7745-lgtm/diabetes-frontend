@@ -199,7 +199,7 @@ Not a toy model:
 
 </div>
 
-> 📝 **Note:** Add screenshots to `public/screenshots/` in the repo. Recommended size: 1600×900px, PNG.
+
 
 ---
 
