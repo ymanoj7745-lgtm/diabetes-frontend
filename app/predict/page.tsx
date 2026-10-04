@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { predictDiabetes } from "@/lib/api";
 import type { PatientInput, PredictionResponse } from "@/lib/types";
 import { Loader2, AlertCircle } from "lucide-react";
@@ -185,6 +185,34 @@ function Field({
   max: number;
   step?: number;
 }) {
+  const [localValue, setLocalValue] = useState<string>(String(value));
+
+  useEffect(() => {
+    setLocalValue(String(value));
+  }, [value]);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const raw = e.target.value;
+    setLocalValue(raw);
+
+    if (raw === "") return;
+
+    const num = Number(raw);
+    if (!Number.isNaN(num)) {
+      onChange(num);
+    }
+  };
+
+  const handleBlur = () => {
+    if (localValue === "" || Number.isNaN(Number(localValue))) {
+      setLocalValue(String(value));
+    } else {
+      const num = Number(localValue);
+      setLocalValue(String(num));
+      onChange(num);
+    }
+  };
+
   return (
     <div>
       <label className="block text-sm font-medium text-slate-700 mb-1.5">
@@ -192,11 +220,13 @@ function Field({
       </label>
       <input
         type="number"
-        value={value}
+        value={localValue}
         min={min}
         max={max}
         step={step}
-        onChange={(e) => onChange(Number(e.target.value))}
+        onChange={handleChange}
+        onBlur={handleBlur}
+        onFocus={(e) => e.target.select()}
         className="w-full border border-slate-300 rounded-lg px-3 py-2 text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
       />
     </div>
