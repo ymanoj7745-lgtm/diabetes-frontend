@@ -186,16 +186,16 @@ Not a toy model:
 <div align="center">
 
 ### 🏠 Landing Page
-<img src="public/screenshots/landing.png" alt="Landing Page" width="800"/>
+<img src="public/landing.png" alt="Landing Page" width="800"/>
 
 ### 🔮 Single Prediction with SHAP
-<img src="public/screenshots/predict.png" alt="Prediction" width="800"/>
+<img src="public/Screenshot%202026-09-26%20150348.png" alt="Prediction Result" width="800"/>
 
 ### 📊 Batch CSV Upload
-<img src="public/screenshots/batch.png" alt="Batch Upload" width="800"/>
+<img src="public/Screenshot%202026-10-04%20185409.png" alt="Batch Upload" width="800"/>
 
 ### 🗺️ India State-Level Risk Map
-<img src="public/screenshots/map.png" alt="India Map" width="800"/>
+<img src="public/Screenshot%202026-10-04%20185552.png" alt="India Map" width="800"/>
 
 </div>
 
